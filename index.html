@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,25 +26,64 @@
                 #d9d5f5,
                 #cce9ef
             );
-            text-align: center;
-            padding: 75px 20px;
+            padding: 55px 7%;
+        }
+
+        .inicio {
+            max-width: 1050px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+        }
+
+        .texto-inicio {
+            flex: 1;
+            text-align: left;
         }
 
         header h1 {
             font-size: 42px;
             color: #594365;
-            margin-bottom: 12px;
+            margin: 0 0 12px;
         }
 
         header h2 {
             color: #805d88;
             font-size: 25px;
             font-weight: normal;
+            margin: 0 0 15px;
         }
 
         header p {
             font-size: 18px;
             color: #594c65;
+            line-height: 1.6;
+        }
+
+        .marco-foto {
+            width: 210px;
+            height: 210px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            padding: 6px;
+            background: linear-gradient(
+                135deg,
+                #a98bd5,
+                #a9dff0
+            );
+            box-shadow: 0 5px 18px #a99acb66;
+        }
+
+        .foto-perfil {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border: 4px solid white;
+            display: block;
         }
 
         nav {
@@ -91,8 +131,23 @@
         }
 
         @media (max-width: 600px) {
+            .inicio {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .texto-inicio {
+                text-align: center;
+            }
+
             header h1 {
                 font-size: 30px;
+            }
+
+            .marco-foto {
+                width: 170px;
+                height: 170px;
             }
 
             nav a {
@@ -111,14 +166,28 @@
 <body>
 
 <header>
-    <h1>Mi mundo creativo</h1>
+    <div class="inicio">
 
-    <h2>Fernanda Ramos</h2>
+        <div class="texto-inicio">
+            <h1>Mi mundo creativo</h1>
 
-    <p>
-        Un espacio para compartir quién soy,
-        mis sueños y mis ideas.
-    </p>
+            <h2>Fernanda Ramos</h2>
+
+            <p>
+                Un espacio para compartir quién soy,
+                mis sueños y mis ideas.
+            </p>
+        </div>
+
+        <div class="marco-foto">
+            <img
+                src="mi-foto.jpeg"
+                alt="Foto de Fernanda"
+                class="foto-perfil"
+            >
+        </div>
+
+    </div>
 </header>
 
 <nav>
@@ -133,7 +202,7 @@
     <h2>🌸 Sobre mí</h2>
 
     <p>
-        Hola! Soy Fernanda. <p>
+        ¡Hola! Soy Fernanda.
         Este es mi pequeño rincón en Internet,
         un lugar donde quiero compartir mi historia,
         mis ideas, mis sueños y mis experiencias.
@@ -181,9 +250,7 @@
 </section>
 
 <footer>
-
     <p>Creado con cariño ♡ | Fernanda Ramos</p>
-
 </footer>
 
 </body>
