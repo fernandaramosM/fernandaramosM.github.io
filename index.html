@@ -19,6 +19,8 @@
             color: #51445a;
         }
 
+        /* PLACA DE INICIO */
+
         header {
             background: linear-gradient(
                 135deg,
@@ -30,12 +32,12 @@
         }
 
         .inicio {
-            max-width: 1050px;
+            max-width: 1100px;
             margin: auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 35px;
+            gap: 40px;
         }
 
         .texto-inicio {
@@ -62,17 +64,21 @@
             line-height: 1.6;
         }
 
+        /* FOTO CIRCULAR */
+
         .marco-foto {
-            width: 210px;
-            height: 210px;
+            width: 280px;
+            height: 280px;
             flex-shrink: 0;
             border-radius: 50%;
-            padding: 6px;
+            padding: 7px;
+
             background: linear-gradient(
                 135deg,
                 #a98bd5,
                 #a9dff0
             );
+
             box-shadow: 0 5px 18px #a99acb66;
         }
 
@@ -85,6 +91,8 @@
             border: 4px solid white;
             display: block;
         }
+
+        /* NAVEGACIÓN */
 
         nav {
             background: white;
@@ -103,6 +111,8 @@
         nav a:hover {
             color: #c080ad;
         }
+
+        /* SECCIONES */
 
         section {
             max-width: 850px;
@@ -123,6 +133,8 @@
             line-height: 1.8;
         }
 
+        /* PIE DE PÁGINA */
+
         footer {
             text-align: center;
             padding: 30px;
@@ -130,7 +142,10 @@
             color: #665575;
         }
 
+        /* ADAPTACIÓN PARA CELULARES */
+
         @media (max-width: 600px) {
+
             .inicio {
                 flex-direction: column-reverse;
                 text-align: center;
@@ -146,8 +161,8 @@
             }
 
             .marco-foto {
-                width: 170px;
-                height: 170px;
+                width: 220px;
+                height: 220px;
             }
 
             nav a {
@@ -160,15 +175,18 @@
                 padding: 23px;
             }
         }
+
     </style>
 </head>
 
 <body>
 
 <header>
+
     <div class="inicio">
 
         <div class="texto-inicio">
+
             <h1>Mi mundo creativo</h1>
 
             <h2>Fernanda Ramos</h2>
@@ -177,17 +195,21 @@
                 Un espacio para compartir quién soy,
                 mis sueños y mis ideas.
             </p>
+
         </div>
 
         <div class="marco-foto">
+
             <img
                 src="Mi-foto.jpeg"
                 alt="Foto de Fernanda"
                 class="foto-perfil"
             >
+
         </div>
 
     </div>
+
 </header>
 
 <nav>
@@ -250,7 +272,9 @@
 </section>
 
 <footer>
+
     <p>Creado con cariño ♡ | Fernanda Ramos</p>
+
 </footer>
 
 </body>
